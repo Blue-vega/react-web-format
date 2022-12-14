@@ -1,0 +1,88 @@
+const Menu =[
+    {
+    Id : 1,
+    image : "image/soop.jpg" ,
+    category : "Breakfast",
+    price : "20$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 2,
+    image : "image/salat.jpg" ,
+    category : "Breakfast",
+    price : "25$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 3,
+    image : "image/breadomlet.jpg" ,
+    category : "Breakfast",
+    price : "25$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 4,
+    image : "image/paneer.jpg" ,
+    category : "Lunch",
+    price : "80$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 5,
+    image : "image/friedRice.jpg" ,
+    category : "Lunch",
+    price : "40$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 6,
+    image : "image/pizza.jpg" ,
+    category : "Lunch",
+    price : "30$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 7,
+    image : "biryani.jpg" ,
+    category : "Dinner",
+    price : "60$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 8,
+    image : "image/mixveg.jpg" ,
+    category : "Dinner",
+    price : "65$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 9,
+    image : "image/fish.jpg" ,
+    category : "Dinner",
+    price : "70$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 10,
+    image : "image/chaap.jpg" ,
+    category : "Evening",
+    price : "25$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 1,
+    image : "image/chai.jpg" ,
+    category : "Evening",
+    price : "10$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+    {
+    Id : 11,
+    image : "image/chowmin.jpg" ,
+    category : "Evening",
+    price : "10$",
+    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dignissimos tempora sapiente eos doloremque, aspernatur et ad autem cupiditate, quidem consectetur est minus cumque ea",
+    },
+  
+
+]

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+html{
+    font-size: 62.5%;   
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* navbar style */
+.main-nav{
+    width: 100%;
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 10rem 1fr 2fr 1fr 10rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0 ,0, 0.3) 0px 30px 60px -30px; 
+}
+.logo{
+    display: grid;
+    grid-column: 2/3;
+    justify-content: start;
+    align-items: center;
+    color:linear-gradient(to bottom, #ff00ff 1%, #ffff99 100%);
+}
+.logo:hover {
+    transition: 0.5s;
+    color: #00989A;
+    transform: scale(1.2);
+}
+div.menu-link{
+    grid-column: 3/4;
+}
+div.menu-link ul {
+    height: 6rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.social-media{
+    grid-column: 4/5;
+}
+.social-media ul{
+    height: 6rem;
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    justify-content: flex-end;
+    align-items: center;
+}
+.social-media ul li {
+    text-align: right; 
+}
+.social-media ul li:first-child {
+    grid-column: 2/3;
+}
+
+/* grid part ends */
+
+.logo h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    color:linear-gradient(#eee, rgb(69, 57, 248));
+ 
+}
+.logo h1 span{
+    font-size: 3.5rem;
+}
+.menu-link ul li{
+font-weight: 2.2rem;
+}
+.menu-link ul li a {
+    text-transform: capitalize;
+    color: black;
+    transition: 0.5s;
+    font-size: 1.6rem;
+}
+.menu-link ul li:hover {
+    transition: 0.5s;
+    color: #00989A;
+    transform: scale(1.3);
+}
+/* icon style */
+.facebook{
+    width: 1.7rem;
+    height: auto;
+    color: #385898;
+}
+.twitter{
+    width: 1.7rem;
+    height: auto;
+    color: rgb(29, 155, 240);
+}
+.instagram{
+    width: 1.7rem;
+    height: auto;
+   color:rgb(208, 20, 255) ;
+}
+
+/* hower effect */
+.hover-fx {
+    font-size: 1.6rem;
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 31px;
+    border-radius: 60%;
+    text-align: center;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+  }
+  
+  .hover-fx:after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 60%;
+    content: '';
+    box-sizing: content-box;
+    box-shadow: 0 0 0 3px rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 300ms;
+  }
+  
+  .hover-fx:hover {
+    background-color: rgb(255, 255, 255);
+    color: #00989A;
+    transform: scale(1.3);
+  }
+  
+  .hover-fx:hover:after {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+  .social-media .hamburger-menu{
+    display: none;
+  }
+  /* ends here */ 
+
+/* responsive css */
+
+@media (max-width: 1080px) {
+    .main-nav{
+        height: 5.5rem;
+        grid-template-columns: 2rem 2fr 3fr 2fr 2rem;
+    }
+        .logo,
+        .menu-link ,
+        .social-media ul {
+            height: 5.5rem;
+        }
+        .facebook,
+        .twitter,
+        .instagram {
+            width: 1.4rem;}
+        .logo h1 {
+            font-size: 2rem;
+            }
+            .social-media .hamburger-menu{
+    display: none;
+  }
+            .logo:hover {
+                transition: 0.5s;
+                color: #00989A;
+                transform: scale(1.1);
+            }
+}
+
+@media (max-width: 998px){
+   
+    .main-nav{
+        height: 5rem;
+        width: 100%;
+        grid-template-columns: 2rem 2fr 4fr 1fr 2rem;
+    }
+    .logo,
+    .social-media ul {
+        height: 5rem;
+    }
+    .logo h1{
+        font-size: 2.5rem;
+    }
+  
+    .social-media{
+        grid-row: 1/2;
+        grid-column: 4/5;
+        justify-items: end;
+        align-items: center;
+        transition: all 2s linear;
+    }
+    .social-media .hamburger-menu{
+        display: none;
+    }
+    .social-media{
+        height: 5rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+}
+
+@media (max-width: 798px) {
+    .main-nav{
+        height: 4.8rem;
+        grid-template-columns: 1rem 2fr 3fr 2fr 1rem;
+    }
+    .menu-link {
+        display: none;
+      }
+    .logo{
+        height: 4.8rem;
+    }
+    .logo h1{
+        font-size: 1.5rem;
+    }
+    .logo h1 span{
+        font-size: 2.2rem;
+    }
+    .social-media ul{
+        display: none;
+    }
+    .logo,
+    .social-media {
+      height: 4.8rem;
+    }
+
+    .mobile-menu-link{
+        grid-column: 2/4;
+        position: relative;
+        z-index: 99;
+    }
+    .mobile-menu-link{
+        background-color: white;
+        height: 20rem;
+        display: grid;
+        grid-column: 3/5;
+        align-items: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        transition: all 2s linear;
+        transform-origin: top;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0 ,0, 0.3) 0px 30px 60px -30px; 
+    }
+    .mobile-menu-link ul {
+        height: 20rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column; 
+    }
+    .mobile-menu-link ul li:first-child {
+        transition-delay: 0.2s;
+    }
+    
+    .social-media{
+        height: 4.8rem;
+        display: flex;
+        justify-self: end;
+        align-items: center;
+    }
+
+    .social-media .hamburger-menu{
+        display: block;
+        font-size: 2.5rem;
+    }
+}
+@media( max-width:520) {
+
+    .main-nav {
+        height: 4.7rem;
+        grid-template-columns: 1rem 4fr 1fr 1fr 1rem;
+      }
+    
+      .logo,
+      .social-media ul {
+        height: 2.7rem;
+      }
+    
+      .logo h2 {
+        font-size: 1.8rem;
+      }
+      .logo h1{
+        font-size: 1rem;
+    }
+    .logo h1 span{
+        font-size: 1rem;
+    }
+    
+      .social-media {
+        height: 4.7rem;
+        display: flex;
+        justify-self: end;
+        align-items: center;
+      }
+    
+      .social-media .hamburger-menu {
+        display: block;
+        font-size: 2.5rem;
+      }
+}
+    @media (max-width: 358px) {
+        .logo h1{
+            height: 2.2rem
+        }
+    }

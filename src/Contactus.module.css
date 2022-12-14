@@ -1,0 +1,214 @@
+.contactContainer {
+  display: flex;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 9rem;
+  background: linear-gradient(to left, #0099ff 0%, #ff00ff 100%);
+  padding: 22px;
+}
+.contactContainer h1 {
+  color: white;
+  background-color: #0000003b;
+  padding: 2px 17px 2px 17px;
+}
+.messageImg {
+  height: 391px;
+  width: auto;
+  grid-column: 2/2;
+  margin: -1rem 2rem 6rem 12rem;
+}
+.formDiv {
+  display: grid;
+  grid-template-columns: 2rem 2fr 2fr 2rem;
+  margin: auto;
+}
+.formInputs {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  grid-column: 3;
+  margin: 8rem 1rem 10rem 10rem;
+  justify-content: center;
+  grid-row: 1;
+}
+#messagel {
+  grid-row: 1;
+  grid-column: 3;
+  text-align: center;
+}
+input [type="submit"] {
+  cursor: pointer;
+  transition: all0 0.2s;
+}
+input,
+textarea {
+  max-width: 50rem;
+  color: rgb(126, 126, 126);
+  padding: 1.6rem 2.4rem;
+  border: 1px solid rgb(231, 0, 247);
+  text-transform: uppercase;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.fSubmit {
+  max-width: 16rem;
+  margin-top: 2rem;
+  background: rgb(236, 137, 245);
+  color: rgb(0, 0, 0);
+  padding: 1.4rem 2.2rem;
+  border-style: solid;
+  border-width: 0.2rem;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.fSubmit :hover {
+  background-color: rgb(243, 11, 243);
+  border: 1px solid blue;
+  color: rgb(141, 35, 173);
+  transition: scale(0.9);
+}
+/* animation */
+.anime {
+  width: 95%;
+  height: 0px;
+  position: relative;
+}
+.anime Img {
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  left: 81%;
+  top: -169px;
+  animation-name: bhag;
+  animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes bhag {
+  from {
+    left: 0;
+  }
+  to {
+    right: 85%;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transforn: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+/* anime animation ends here */
+/* mediaQuery Starts Here */
+@media (max-width: 996px) {
+  .anime {
+    width: 80%;
+  }
+  .formInputs {
+    margin: 8rem 0rem 0rem 8rem;
+  }
+  input,
+  textarea {
+    padding: 1.2rem 0.3rem;
+  }
+  .messageImg {
+    margin: -1rem 2rem 6rem 4rem;
+  }
+}
+@media (max-width: 856px) {
+  .anime Img {
+    width: 69px;
+    height: 64px;
+    top: -146px;
+  }
+  .messageImg {
+    height: 315px;
+  }
+  .fSubmit {
+    max-width: 9rem;
+    margin-top: 1rem;
+    padding: 0.6rem 2.2rem;
+  }
+}
+@media (max-width: 752px) {
+  .contactContainer h1 {
+    font-size: 15px;
+  }
+  .anime Img {
+    width: 78px;
+    height: 64px;
+    top: -95px;
+    left: 80%;
+  }
+  .contactContainer {
+    margin-bottom: 4rem;
+    padding: 14px;
+  }
+  .messageImg {
+    margin: 1rem 1rem 3rem 1rem;
+  }
+  .formInputs {
+    margin: 7rem 6rem 2rem 6rem;
+  }
+  input,
+  textarea {
+    padding: 1.4rem 0.5rem;
+  }
+}
+@media (max-width: 672px) {
+  .messageImg {
+    height: 279px;
+    margin: 3rem 1rem 3rem 1rem;
+  }
+  .anime Img {
+    top: -95px;
+  }
+}
+@media (max-width: 640px) {
+  messageImg {
+    height: 213px;
+  }
+}
+@media (max-width: 578px) {
+  messageImg {
+    height: 196px;
+  }
+  .formInputs {
+    gap: 1rem;
+  }
+  .anime Img {
+    width: 56px;
+    height: 47px;
+    top: -81px;
+  }
+}
+@media (max-width: 430px) {
+  .formDiv {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  messageImg {
+    margin: 0rem 1rem 1rem 1rem;
+    height: 115px;
+  }
+  .formInputs {
+    margin: 1rem 9rem 3rem 8rem;
+  }
+  .anime Img {
+    top: -81px;
+  }
+}
